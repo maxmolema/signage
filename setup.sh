@@ -6,7 +6,7 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 apt-get install unclutter
-gsettings set org.gnome.nautilus.desktop trash-icon-visible false
+sed -i 's,^\(show_trash[ ]*=\).*,\1'0',g' /etc/xdg/pcmanfm/LXDE-pi/desktop-items-0.conf
 cp signage-autostart.desktop /etc/xdg/autostart
 
 echo Done
