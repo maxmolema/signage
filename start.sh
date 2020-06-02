@@ -5,6 +5,11 @@ echo Running Updates.
 #Hide cursor and taskbar
 unclutter -idle 0 &
 pkill lxpanel
+
+#Prevent screen sleep
+xset s 0
+xset -dpms
+
 cd $HOME
 if [[ ! -d signage ]] 
 then

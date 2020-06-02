@@ -7,4 +7,5 @@ if [ "$EUID" -ne 0 ]
 fi
 apt-get install unclutter
 cp signage-autostart.desktop /etc/xdg/autostart
+
 echo Done
