@@ -6,6 +6,7 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 apt-get install unclutter
+gsettings set org.gnome.nautilus.desktop trash-icon-visible false
 cp signage-autostart.desktop /etc/xdg/autostart
 
 echo Done
