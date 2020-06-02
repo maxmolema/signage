@@ -18,7 +18,7 @@ function createWindow() {
 
   mainWindow.removeMenu()
 
-  
+
 
   global.airports = ['encn', 'engk']
   global.imagesArray = fs.readdirSync('./content/slides')
