@@ -17,7 +17,6 @@
   "author": "Max Molema",
   "license": "CC0-1.0",
   "dependencies": {
-    "auto-updater": "^1.0.2",
     "fs": "*"
   },
   "devDependencies": {
