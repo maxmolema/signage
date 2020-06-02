@@ -1,0 +1,27 @@
+{
+  "name": "signage",
+  "version": "1.0.0",
+  "description": "A signage system developed by Max Molema",
+  "main": "main.js",
+  "build": {
+    "appId": "com.maxmolema.signage"
+  },
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "repository": "",
+  "keywords": [],
+  "author": "Max Molema",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "fs": "*"
+  },
+  "devDependencies": {
+    "electron": "^9.0.0",
+    "electron-builder": "^22.7.0",
+    "fs": "*"
+  }
+}
