@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=Signage
+Exec=bash /home/pi/signage/start.sh
