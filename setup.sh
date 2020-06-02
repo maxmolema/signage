@@ -6,7 +6,7 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 apt-get install unclutter
-sed -i 's,^\(show_trash[ ]*=\).*,\1'0',g' /etc/xdg/pcmanfm/LXDE-pi/desktop-items-0.conf
+sed -i 's,^\(show_trash[ ]*=\).*,\1'0',g' /home/pi/.config/pcmanfm/LXDE-pi/desktop-items-0.conf
 cp signage-autostart.desktop /etc/xdg/autostart
 
 echo Done
